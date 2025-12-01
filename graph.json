@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "area-llm",
+      "type": "area",
+      "title": "Large Language Models",
+      "shortName": "LLMs",
+      "description": "All work related to large language models, scaling laws, decoding, etc.",
+      "tags": ["NLP", "deep learning"],
+      "color": "#ff9f43",
+      "largerAreaId": null,
+      "image": "assets/llm.png"
+    },
+    {
+      "id": "paper-spd",
+      "type": "paper",
+      "title": "Superposed Decoding for Language Models",
+      "shortName": "SPD",
+      "paperUrl": "https://arxiv.org/abs/XXXX.XXXXX",
+      "conference": "ICLR 2024",
+      "tags": ["decoding", "superposition"],
+      "areas": ["area-llm"],
+      "description": "Explores decoding by superposing multiple hypotheses in embedding space.",
+      "image": "assets/spd.png"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "from": "paper-spd",
+      "to": "area-llm",
+      "directed": true,
+      "kind": "paper-area"
+    },
+    {
+      "id": "edge2",
+      "from": "area-llm",
+      "to": "area-ml",
+      "directed": false,
+      "kind": "area-area"
+    }
+  ]
+}
